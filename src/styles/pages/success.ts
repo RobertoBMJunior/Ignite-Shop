@@ -4,7 +4,7 @@ export const SuccessContainer = styled('main',{
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
 
     margin: '0 auto',
     height: 656,
@@ -26,7 +26,7 @@ export const SuccessContainer = styled('main',{
     a: {
         display: 'block',
         marginTop: '5rem',
-        fontSize: '$lg',
+        fontSize: '$xl',
         color: '$green500',
         textDecoration: 'none',
         fontWeight: 'bold',
@@ -51,6 +51,7 @@ export const ImageContainer = styled('div', {
     justifyContent: 'center',
 
     img: {
-        objectFit: 'cover',
+        objectFit: 'fill',
+        borderRadius: 8,
     }
 })

@@ -25,7 +25,7 @@ export default function Success ({ customerName, product }:SuccessProps) {
             <SuccessContainer>
                 <h1>Compra Efetuada</h1>
                 <ImageContainer>
-                    <Image src={product.imageUrl} width={120}  height={110} alt=""/>
+                    <Image src={product.imageUrl} width={130}  height={145} alt=""/>
                 </ImageContainer>
 
                 <p>
