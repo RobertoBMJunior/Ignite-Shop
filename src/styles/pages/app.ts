@@ -7,6 +7,15 @@ export const Container = styled('div', {
     justifyContent: 'flex-start',
 
     minHeight: '100vh',
+    padding: '2rem',
+
+    '@bp1': {
+        padding: '2rem',
+    },
+
+    '@bp3': {
+        padding: '1rem',
+    },
 })
 
 export const Header = styled('header', {

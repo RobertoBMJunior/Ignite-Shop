@@ -5,9 +5,20 @@ export const ProductContainer = styled('main',{
     gridTemplateColumns: '1fr 1fr',
     alignItems: 'stretch',
     gap: '4rem',
-    height: 480,
+    minHeight: 480,
     maxWidth: 1180,
-    margin: '0 auto',
+    margin: '0 auto 1rem',
+
+    '@bp1': {
+        display: 'flex',
+        flexDirection: 'column',
+        // flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '2rem',
+
+    },
+
 })
 
 export const ImageContainer = styled('div',{
@@ -25,7 +36,19 @@ export const ImageContainer = styled('div',{
     img: {
         objectFit: 'fill',
         borderRadius: 8,
-    }
+    },
+
+    '@bp2': {
+        width: '220px',
+        height:'203px',
+
+        img:{
+            width: '220px',
+            height:'203px',
+        }
+
+    },
+    
 
 })
 
@@ -73,4 +96,5 @@ export const ProductDetails = styled('div',{
             backgroundColor: '$green300',
         }
     },
+
 })

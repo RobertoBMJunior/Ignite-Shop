@@ -1,12 +1,31 @@
 import { styled } from "..";
 
+
 export const HomeContainer = styled('main', {
     display: 'flex',
-    // gap: '3rem',
+    gap: '3rem',
     width: '100%',
     maxWidth: 'calc(100vw - ((100vw - 1180px)/2))',
     marginLeft: 'auto',
     minHeight: 480,
+
+    a: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+    '@bp1': {
+        display: 'flex',
+        flexDirection: 'column',
+        // flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '2rem',
+
+    },
+
+    
 })
 
 export const Product = styled('div', {
@@ -15,14 +34,17 @@ export const Product = styled('div', {
     // padding: '0.25rem',
     cursor: 'pointer',
     position: 'relative',
-    overflow: 'hidden',
+    // overflow: 'hidden',
 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
 
+    // width: '300px',
+
     img: {
         objectFit: 'cover',
+
     },
 
     footer: {
@@ -62,5 +84,24 @@ export const Product = styled('div', {
             transform:'translateY(0%)',
             opacity: 1,
         }
+    },
+
+    '@bp1': {
+        // overflow: 'visible',
+        width: '100%',
+        height:'203px',
+
+        img: {
+            overflow: 'visible',
+            // objectFit: 'fill',
+            width: '378px',
+            height:'203px',
+        },
+
+        footer: {
+            display: 'flex',
+            flexDirection: 'column',
+        }
     }
+
 })
